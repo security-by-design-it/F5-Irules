@@ -1,7 +1,7 @@
 # IRule to get the nonce value of a CSP header and put it in the HTML script tags
-# This is needed for the JS that is injected by a ASM botdefense profile
+# This is needed for the JavaScript that is injected by an ASM Bot Defence profile
 # Make sure to put a HTML profile on the virtual server that triggers an
-# event when it detects a scipt-tag in the HTML.
+# event when it detects a script-tag in the HTML.
 
 when HTTP_RESPONSE {
     # Check if the response header contains a CSP
